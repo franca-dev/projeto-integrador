@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+       <main class="text-center mt-3">
+        <h2>Contato</h2>
+        <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+        <form action="">
+            <div class="text-start form-group">
+                <label for="text">Nome completo</label>
+                <input class="form-control" type="text" name="nomecompleto">
+                <label for="email">E-mail</label>
+                <input class="form-control" type="email" name="email">
+                <label for="text">Assunto</label>
+                <input class="form-control" type="text" name="assunto">
+                <label for="text">Corpo do e-mail</label>
+                <textarea class="form-control" name="textarea"></textarea>
+                <label for="file">Arquivo</label>
+                <input class="form-control" type="file" name="file" >               
+            </div>
+        </form>
+        </div>
+        <div class="col-md-3"></div>
+        </div>
+    </main>
+     
+{% endblock %}
